@@ -1,1 +1,1 @@
-# LHS_GPT
+# End-To-End-Gemini-Project
