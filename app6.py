@@ -133,6 +133,9 @@ st.markdown("""
             #MainMenu{
                 display: none;
             }
+            #stToolbarActions{
+            display:none;
+            }
     </style>
 """, unsafe_allow_html=True)
 
