@@ -133,7 +133,7 @@ st.markdown("""
         #MainMenu{
             display: none;
         }
-        #root > div:nth-child(1) > div.withScreencast > div > div > header > div.st-emotion-cache-15ecox0.ezrtsby0 > div > div:nth-child(3){
+        kind="header"{
            display:none;
         }
     </style>
