@@ -134,7 +134,7 @@ st.markdown("""
             display: none;
         }
         #root{
-           display:none
+           
         }
     </style>
 """, unsafe_allow_html=True)
