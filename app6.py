@@ -17,7 +17,7 @@ else:
 
 # Predefined questions and answers
 predefined_qna = {
-    "who are you": "I am LHS-GPT, a leading provider of ERP solutions for various industries. A multimodal AI model developed by Lighthouse Info Systems Pvt. Ltd.",
+    "who are you": "I am Lighthouse Info Systems Pvt. Ltd., a leading provider of ERP solutions for various industries. A multimodal AI model developed by LHS.",
     "who made you": "I was created by the team at LHS."
 }
 
@@ -93,6 +93,27 @@ def clear_conversations():
 # Custom CSS for styling
 st.markdown("""
     <style>
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            width: 79%;
+            height: 150px;
+            background-color: #262730; /* Change to desired background color */
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            padding: 70px 40px 20px 25px;
+            color: #fff; /* Change to desired text color */
+            margin-right: 50px;
+        }
+        .fixed-text-header {
+            padding: 25px 80px 20px 50px;; /* Adjust this value based on your preference */
+            color: #fff; /* Change to desired text color */
+        }
+        .main-content {
+            margin-top: 40px; /* Adjust this value based on the height of your header */
+            padding: 5px;
+        }
         .fixed-top-left {
             position: fixed;
             top: 10px;
@@ -110,6 +131,17 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+
+# Updated HTML for the fixed header
+st.markdown("""
+    <div class="fixed-header">
+    <img src="https://www.lighthouseindia.com/images/slider2020/lhs-logo.webp " alt="Logo" style="height: 70px; margin-right: 10px; margin-top:6px;>
+        <div class="fixed-text-header">
+            <h1>Lighthouse GPT</h1>
+        </div>
+    </div>
+""", unsafe_allow_html=True)
+
 
 # Sidebar for displaying prompts and model selection
 with st.sidebar:
@@ -134,13 +166,9 @@ with st.sidebar:
 
     st.markdown('</div>', unsafe_allow_html=True)
 
-# Logo and title
-left_co, cent_co, last_co = st.columns([10, 9, 2.5])
-with cent_co:
-    st.image("logo.png", width=100)
-left_co, cent_co, last_co = st.columns([7, 8, 2.5])
-with cent_co:
-    st.title("Lighthouse GPT")
+
+# Main content
+st.markdown('<div class="main-content">', unsafe_allow_html=True)
 
 # Supervise user input
 if user_input := st.chat_input("Message LHS GPT..."):
@@ -178,6 +206,8 @@ if st.session_state['selected_conversation'] is not None:
     selected_conversation = st.session_state['conversations'][st.session_state['selected_conversation']]
     for role, text in selected_conversation['history']:
         st.markdown(f"**{role}**: {text}")
+
+st.markdown('</div>', unsafe_allow_html=True)
 
 # Script to enable pressing enter to send message
 st.markdown("""
