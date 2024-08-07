@@ -175,7 +175,7 @@ with st.sidebar:
 st.markdown('<div class="main-content">', unsafe_allow_html=True)
 
 # Supervise user input
-if user_input := st.chat_input("Message LHS GPT..."):
+if user_input := st.chat_input("Message Lighthouse GPT..."):
     # Append user input to history
     st.session_state['chat_history'].append({"role": "user", "content": user_input})
     
