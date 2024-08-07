@@ -3,6 +3,7 @@ import os
 import streamlit as st
 import google.generativeai as genai
 from groq import Groq
+import streamlit.components.v1 as components
 
 # Load environment variables
 load_dotenv()
@@ -128,7 +129,10 @@ st.markdown("""
         }
         .sidebar-history {
             margin-top: 20px;
-        }
+        }           
+            #MainMenu{
+                display: none;
+            }
     </style>
 """, unsafe_allow_html=True)
 
