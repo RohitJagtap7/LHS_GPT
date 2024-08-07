@@ -97,7 +97,7 @@ st.markdown("""
         .fixed-header {
             position: fixed;
             top: 0;
-            width: 79%;
+            width: 75%;
             height: 150px;
             background-color: #262730; /* Change to desired background color */
             z-index: 1000;
