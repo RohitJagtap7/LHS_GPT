@@ -99,7 +99,7 @@ st.markdown("""
             top: 0;
             width: 75%;
             height: 150px;
-            background-color: #fff; /* Change to desired background color */
+            background-color:; /* Change to desired background color */
             z-index: 1000;
             display: flex;
             align-items: center;
