@@ -136,8 +136,8 @@ st.markdown("""
         .stActionButton{
             display:none;
         }
-        .viewerBadge_container__r5tak{
-            display:none;
+        .viewerBadge_container__r5tak {
+            display: none;
         }
     </style>
 """, unsafe_allow_html=True)
