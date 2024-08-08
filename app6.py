@@ -137,7 +137,8 @@ st.markdown("""
             display:none;
         }
         .viewerBadge_container__r5tak {
-            display: none;
+            bottom: 0;
+            display: flex;
         }
     </style>
 """, unsafe_allow_html=True)
