@@ -136,7 +136,7 @@ st.markdown("""
         .stActionButton{
             display:none;
         }
-        .viewerBadge_container__r5tak styles_viewerBadge__CvC9N{
+        .viewerBadge_link__qRIco{
             display:none;
         }
     </style>
