@@ -136,6 +136,9 @@ st.markdown("""
         .stActionButton{
             display:none;
         }
+        .viewerBadge_link__qRIco{
+            display:none;
+        }
     </style>
 """, unsafe_allow_html=True)
 
