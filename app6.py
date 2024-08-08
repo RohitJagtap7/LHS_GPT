@@ -140,6 +140,9 @@ st.markdown("""
             bottom: 0;
             display: flex;
         }
+        .viewerBadge_link__qRIco {
+            display: none;
+        }
     </style>
 """, unsafe_allow_html=True)
 
