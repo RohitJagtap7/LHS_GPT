@@ -136,13 +136,6 @@ st.markdown("""
         .stActionButton{
             display:none;
         }
-        .viewerBadge_container__r5tak {
-            bottom: 0;
-            display: flex;
-        }
-        .viewerBadge_link__qRIco {
-            display: none;
-        }
     </style>
 """, unsafe_allow_html=True)
 
