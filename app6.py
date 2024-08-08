@@ -133,7 +133,7 @@ st.markdown("""
         #MainMenu{
             display:none;
         }
-        #stActionButtonIcon{
+        #stActionButton{
             display:none;
         }
     </style>
