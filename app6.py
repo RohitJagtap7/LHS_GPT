@@ -131,7 +131,7 @@ st.markdown("""
             margin-top: 20px;
         }           
         #MainMenu{
-            
+            display:none;
         }
         .stActionButton{
             display:none;
